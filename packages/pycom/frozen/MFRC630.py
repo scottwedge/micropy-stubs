@@ -545,8 +545,8 @@ class MFRC630:
                 coll = self.mfrc630_read_reg(MFRC630_REG_RXCOLL)
                 self.print_debug("irq0: %x coll: %x error: %x " % (irq0, coll, error))
                 collision_pos = 0
-                if irq0 and MFRC630_IRQ0_ERR_IRQ:  # some error occured.
-                    self.print_debug("some error occured.")
+                if irq0 and MFRC630_IRQ0_ERR_IRQ:  # some error occurred.
+                    self.print_debug("some error occurred.")
                     # Check what kind of error.
                     if (error & MFRC630_ERROR_COLLDET):
                         # A collision was detected...

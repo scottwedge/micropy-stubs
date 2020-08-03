@@ -441,7 +441,7 @@ def generate(firmware, update):
         print(f"\n{s['firmware']}:")
         print(f"Devices Loaded: {s['loaded']}/{s['possible']}")
     if errors:
-        print("\nThe following errors occured:")
+        print("\nThe following errors occurred:")
         for e in errors:
             print("\nType:", e['type'])
             print("Message:", e.get('msg'))
